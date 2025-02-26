@@ -20,17 +20,15 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-    object-position: center;
     border-radius: 0.625em;
 }
 
 main {
     background: #fff;
-    max-width: 24rem;
+    width: clamp(20.4rem, 33vw, 24rem);
     margin-inline: auto;
     border: 1px solid #000;
-    border-radius: 1.25rem;
+    border-radius: 1.25em;
     box-shadow: .5em .5em #111;
 }
 
@@ -40,14 +38,19 @@ main {
 }
 
 .main-image {
-    margin-block: 1.5rem;
+    margin-block: 1.7em;
+}
+
+.small-description-box,
+.date-text {
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
 }
 
 .small-description-box {
     display: inline-block;
     background: #F4D04E;
-    padding: 4px 12px;
-    border-radius: 4px;
+    padding: 0.25em 0.75em;
+    border-radius: 0.25em;
     font-weight: 700;
 }
 
@@ -57,9 +60,9 @@ main {
 }
 
 .main-heading {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
     font-weight: 800;
-    margin-block: 1rem;
+    margin-block: .7em;
 }
 
 .main-heading__link {
@@ -74,7 +77,7 @@ main {
 }
 
 .main-text {
-    font-size: 1rem;
+    font-size: clamp(.875rem, 1.4vw, 1rem);
     font-weight: 400;
     color: #6b6b6b;
 }
@@ -88,23 +91,4 @@ main {
 
 .author-footer__name {
     font-weight: 800;
-}
-
-@media (max-width: 450px) {
-    article {
-        max-width: 20.4rem;
-    }
-
-    .main-heading {
-        font-size: 1.25rem;
-    }
-    
-    .small-description-box,
-    .date-text {
-        font-size: 0.75rem;
-    }
-
-    .main-text {
-        font-size: .875rem;
-    }
 }
