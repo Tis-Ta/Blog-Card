@@ -25,7 +25,7 @@ img {
     border-radius: 0.625em;
 }
 
-article {
+main {
     background: #fff;
     max-width: 24rem;
     margin-inline: auto;
@@ -75,6 +75,7 @@ article {
 
 .main-text {
     font-size: 1rem;
+    font-weight: 400;
     color: #6b6b6b;
 }
 
@@ -89,7 +90,7 @@ article {
     font-weight: 800;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     article {
         max-width: 20.4rem;
     }
